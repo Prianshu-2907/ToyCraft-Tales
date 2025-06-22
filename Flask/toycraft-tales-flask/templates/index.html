@@ -1,0 +1,827 @@
+{% extends "base.html" %} {% block content %}
+<div class="row">
+  <div class="col-lg-12">
+    <!-- Awesome Header Section -->
+    <div class="hero-section">
+      <div class="hero-background">
+        <div class="floating-shapes">
+          <div class="shape shape-1"></div>
+          <div class="shape shape-2"></div>
+          <div class="shape shape-3"></div>
+          <div class="shape shape-4"></div>
+        </div>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-badge fade-in-up">
+          <span class="badge-icon">🎯</span>
+          <span class="badge-text">Data-Driven Insights</span>
+        </div>
+
+        <h1 class="hero-title typing-animation">ToyCraft Tales</h1>
+        <h2 class="hero-subtitle fade-in-up delay-1">
+          Tableau's Vision into Toy Manufacturing Data
+        </h2>
+
+        <p class="hero-description fade-in-up delay-2">
+          Employ Tableau to delve into Toy Manufacturers' data, uncovering
+          market trends, production patterns, and consumer preferences. Craft
+          interactive visualizations to guide strategic decisions and enhance
+          market competitiveness.
+        </p>
+
+        <div class="hero-highlights fade-in-up delay-3">
+          <div class="highlight-item">
+            <div class="highlight-icon">📈</div>
+            <div class="highlight-text">Market Trend Analysis</div>
+          </div>
+          <div class="highlight-item">
+            <div class="highlight-icon">👥</div>
+            <div class="highlight-text">Consumer Behavior Insights</div>
+          </div>
+          <div class="highlight-item">
+            <div class="highlight-icon">🌍</div>
+            <div class="highlight-text">Regional Performance</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation Cards Section -->
+    <div class="navigation-section">
+      <div class="container">
+        <h3 class="section-title text-center mb-5">
+          Explore Interactive Visualizations
+        </h3>
+
+        <div class="row g-4">
+          <!-- Dashboard Card -->
+          <div class="col-lg-4 col-md-6">
+            <div class="nav-card dashboard-card" data-tilt>
+              <div class="card-background">
+                <div class="card-pattern"></div>
+              </div>
+              <div class="card-content">
+                <div class="card-icon">📊</div>
+                <h4 class="card-title">Comprehensive Dashboard</h4>
+                <p class="card-description">
+                  View integrated analytics covering market trends, production
+                  patterns, and consumer preferences in one comprehensive
+                  overview.
+                </p>
+                <div class="card-features">
+                  <span class="feature-tag">Market Analysis</span>
+                  <span class="feature-tag">Real-time Data</span>
+                  <span class="feature-tag">Interactive Filters</span>
+                </div>
+                <a
+                  href="{{ url_for('dashboard') }}"
+                  class="nav-btn btn-dashboard"
+                >
+                  <span class="btn-text">View Dashboard</span>
+                  <span class="btn-icon">→</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Charts Card -->
+          <div class="col-lg-4 col-md-6">
+            <div class="nav-card charts-card" data-tilt>
+              <div class="card-background">
+                <div class="card-pattern"></div>
+              </div>
+              <div class="card-content">
+                <div class="card-icon">📈</div>
+                <h4 class="card-title">Individual Charts</h4>
+                <p class="card-description">
+                  Explore detailed visualizations analyzing seasonal trends,
+                  demographic preferences, and regional performance across toy
+                  categories.
+                </p>
+                <div class="card-features">
+                  <span class="feature-tag">Seasonal Analysis</span>
+                  <span class="feature-tag">Demographics</span>
+                  <span class="feature-tag">Regional Data</span>
+                </div>
+                <a href="{{ url_for('charts') }}" class="nav-btn btn-charts">
+                  <span class="btn-text">View Charts</span>
+                  <span class="btn-icon">→</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Story Card -->
+          <div class="col-lg-4 col-md-12">
+            <div class="nav-card story-card" data-tilt>
+              <div class="card-background">
+                <div class="card-pattern"></div>
+              </div>
+              <div class="card-content">
+                <div class="card-icon">📖</div>
+                <h4 class="card-title">Data Story</h4>
+                <p class="card-description">
+                  Follow the narrative journey through toy manufacturing
+                  insights, from market evolution to consumer behavior patterns
+                  and strategic recommendations.
+                </p>
+                <div class="card-features">
+                  <span class="feature-tag">Narrative Flow</span>
+                  <span class="feature-tag">Key Insights</span>
+                  <span class="feature-tag">Strategic Guide</span>
+                </div>
+                <a href="{{ url_for('story') }}" class="nav-btn btn-story">
+                  <span class="btn-text">View Story</span>
+                  <span class="btn-icon">→</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Overview Section -->
+    <div class="overview-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="overview-content">
+              <h3 class="overview-title">Comprehensive Industry Analysis</h3>
+              <p class="overview-text">
+                The Toy Manufacturers' Data Exploration and Visualization
+                Project leverages Tableau's power to provide comprehensive
+                analysis of the toy manufacturing industry. By examining vast
+                datasets encompassing various industry facets, we uncover
+                valuable insights related to market trends, production patterns,
+                and consumer preferences.
+              </p>
+              <div class="analysis-points">
+                <div class="point-item">
+                  <div class="point-icon">🔍</div>
+                  <div class="point-text">
+                    <strong>Market Dynamics:</strong> Visualize industry
+                    evolution and identify emerging demands
+                  </div>
+                </div>
+                <div class="point-item">
+                  <div class="point-icon">👤</div>
+                  <div class="point-text">
+                    <strong>Consumer Insights:</strong> Analyze behavior
+                    patterns and demographic preferences
+                  </div>
+                </div>
+                <div class="point-item">
+                  <div class="point-icon">📊</div>
+                  <div class="point-text">
+                    <strong>Strategic Decisions:</strong> Enable data-driven
+                    manufacturing and marketing strategies
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="overview-visual">
+              <div class="visual-container">
+                <div class="data-flow">
+                  <div class="flow-item">📊 Raw Data</div>
+                  <div class="flow-arrow">↓</div>
+                  <div class="flow-item">🔧 Tableau Analysis</div>
+                  <div class="flow-arrow">↓</div>
+                  <div class="flow-item">💡 Strategic Insights</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Enhanced Contact Section -->
+    <div class="contact-section">
+      <div class="container">
+        <div class="contact-header text-center">
+          <h3 class="contact-title">✨ Join Our Community</h3>
+          <p class="contact-subtitle">
+            Connect with data enthusiasts and get exclusive access to insights
+            and updates
+          </p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-6 col-md-8">
+            <div class="contact-form-container">
+              <div class="contact-form-wrapper">
+                <!-- Flash Messages -->
+                {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                <div class="flash-messages">
+                  {% for category, message in messages %}
+                  <div class="flash-message flash-{{ category }}">
+                    <span class="flash-icon">
+                      {% if category == 'success' %}✅{% else %}❌{% endif %}
+                    </span>
+                    {{ message }}
+                    <button
+                      type="button"
+                      class="flash-close"
+                      onclick="this.parentElement.remove()"
+                    >
+                      ×
+                    </button>
+                  </div>
+                  {% endfor %}
+                </div>
+                {% endif %} {% endwith %}
+
+                <form
+                  action="{{ url_for('submit_contact') }}"
+                  method="POST"
+                  class="contact-form"
+                  id="contactForm"
+                >
+                  <div class="form-group">
+                    <div class="input-container">
+                      <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        class="form-input"
+                        required
+                        minlength="2"
+                        maxlength="50"
+                        placeholder=" "
+                      />
+                      <label for="name" class="form-label">Full Name</label>
+                      <div class="input-icon">👤</div>
+                      <div class="input-feedback" id="name-feedback"></div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="input-container">
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        class="form-input"
+                        required
+                        placeholder=" "
+                      />
+                      <label for="email" class="form-label"
+                        >Email Address</label
+                      >
+                      <div class="input-icon">📧</div>
+                      <div class="input-feedback" id="email-feedback"></div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="input-container">
+                      <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        class="form-input"
+                        required
+                        pattern="[0-9]{10}"
+                        maxlength="10"
+                        placeholder=" "
+                      />
+                      <label for="phone" class="form-label"
+                        >Phone Number (10 digits)</label
+                      >
+                      <div class="input-icon">📱</div>
+                      <div class="input-feedback" id="phone-feedback"></div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <button type="submit" class="submit-btn" id="submitBtn">
+                      <span class="btn-text">🚀 Join Community</span>
+                      <span class="btn-loader" style="display: none">
+                        <span class="spinner"></span>
+                        Processing...
+                      </span>
+                      <span class="btn-icon">→</span>
+                    </button>
+                  </div>
+
+                  <div class="form-footer">
+                    <p class="privacy-text">
+                      <i class="fas fa-shield-alt"></i>
+                      Your information is secure and will only be used for
+                      community updates.
+                    </p>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Success Metrics Section (Removed user count and 24/7 access) -->
+    <div class="success-metrics-section">
+      <div class="container">
+        <div class="metrics-container">
+          <div class="metric-item">
+            <div class="metric-icon">🎯</div>
+            <div class="metric-number">100%</div>
+            <div class="metric-label">Data Accuracy</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-icon">🔒</div>
+            <div class="metric-number">100%</div>
+            <div class="metric-label">Secure Platform</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-icon">📈</div>
+            <div class="metric-number">Real-time</div>
+            <div class="metric-label">Data Updates</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Enhanced Styling for Contact Form -->
+<style>
+  /* Flash Messages Styling */
+  .flash-messages {
+    margin-bottom: 2rem;
+  }
+
+  .flash-message {
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-weight: 500;
+    position: relative;
+    animation: slideIn 0.3s ease-out;
+  }
+
+  .flash-success {
+    background: linear-gradient(135deg, #f0fff4 0%, #c6f6d5 100%);
+    color: #2f855a;
+    border: 1px solid #9ae6b4;
+  }
+
+  .flash-error {
+    background: linear-gradient(135deg, #fff5f5 0%, #fed7d7 100%);
+    color: #c53030;
+    border: 1px solid #feb2b2;
+  }
+
+  .flash-icon {
+    font-size: 1.3rem;
+  }
+
+  .flash-close {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: inherit;
+    cursor: pointer;
+    margin-left: auto;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+  }
+
+  .flash-close:hover {
+    opacity: 1;
+  }
+
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Enhanced Form Styling */
+  .contact-form-container {
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.9) 100%
+    );
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 2.5rem;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .input-container {
+    position: relative;
+    margin-bottom: 1.5rem;
+  }
+  .form-input {
+    width: 100%;
+    padding: 1.2rem 3rem 1.2rem 1.2rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: rgba(248, 250, 252, 0.8);
+    box-sizing: border-box;
+  }
+
+  .form-input:focus {
+    outline: none;
+    border-color: #667eea;
+    background: white;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.15);
+  }
+
+  .form-input:valid:not(:placeholder-shown) {
+    border-color: #48bb78;
+  }
+
+  .form-input:invalid:not(:placeholder-shown) {
+    border-color: #f56565;
+  }
+
+  .form-label {
+    position: absolute;
+    left: 1.2rem;
+    top: 1.2rem;
+    font-size: 1rem;
+    color: #718096;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    background: white;
+    padding: 0 0.5rem;
+  }
+
+  .form-input:focus ~ .form-label,
+  .form-input:not(:placeholder-shown) ~ .form-label {
+    top: -0.5rem;
+    left: 1rem;
+    font-size: 0.85rem;
+    color: #667eea;
+    font-weight: 600;
+  }
+
+  .input-icon {
+    position: absolute;
+    right: 1rem;
+    top: 1.2rem;
+    font-size: 1.2rem;
+    color: #a0aec0;
+    transition: color 0.3s ease;
+  }
+
+  .form-input:focus ~ .input-icon {
+    color: #667eea;
+  }
+
+  .input-feedback {
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+    min-height: 1.2rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+
+  .submit-btn {
+    width: 100%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 1.3rem 2rem;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    position: relative;
+    overflow: hidden;
+    margin-top: 1rem;
+  }
+
+  .submit-btn:hover:not(:disabled) {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(102, 126, 234, 0.4);
+  }
+
+  .submit-btn:active {
+    transform: translateY(-1px);
+  }
+
+  .submit-btn:disabled {
+    opacity: 0.8;
+    cursor: not-allowed;
+    transform: none;
+  }
+
+  .btn-loader {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .spinner {
+    width: 18px;
+    height: 18px;
+    border: 2px solid transparent;
+    border-top: 2px solid white;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .privacy-text {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #718096;
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .privacy-text i {
+    color: #48bb78;
+  }
+
+  /* Success Metrics Section (Updated from Contact Stats) */
+  .success-metrics-section {
+    background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+    padding: 4rem 0;
+    margin-top: 3rem;
+  }
+
+  .metrics-container {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+  }
+
+  .metric-item {
+    text-align: center;
+    padding: 2rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+    min-width: 200px;
+  }
+
+  .metric-item:hover {
+    transform: translateY(-5px);
+  }
+
+  .metric-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .metric-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 0.5rem;
+  }
+
+  .metric-label {
+    color: #718096;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact-form-container {
+      margin: 0 1rem;
+      padding: 2rem;
+    }
+
+    .metrics-container {
+      gap: 1.5rem;
+    }
+
+    .metric-item {
+      min-width: 150px;
+      padding: 1.5rem;
+    }
+
+    .metric-number {
+      font-size: 1.5rem;
+    }
+
+    .contact-title {
+      font-size: 2rem;
+    }
+  }
+</style>
+{% endblock %} {% block extra_js %}
+<script>
+  // Enhanced form validation and interactions
+  function initEnhancedContactForm() {
+    const form = document.getElementById("contactForm");
+    const submitBtn = document.getElementById("submitBtn");
+    const nameInput = document.getElementById("name");
+    const emailInput = document.getElementById("email");
+    const phoneInput = document.getElementById("phone");
+
+    // Phone number validation with real-time feedback
+    phoneInput.addEventListener("input", function () {
+      // Remove all non-digit characters
+      const value = this.value.replace(/\D/g, "");
+      this.value = value.slice(0, 10);
+
+      const feedback = document.getElementById("phone-feedback");
+      if (value.length === 10) {
+        feedback.textContent = "✅ Valid phone number";
+        feedback.style.color = "#48bb78";
+        this.style.borderColor = "#48bb78";
+      } else if (value.length > 0) {
+        feedback.textContent = `📱 ${value.length}/10 digits required`;
+        feedback.style.color = "#ed8936";
+        this.style.borderColor = "#ed8936";
+      } else {
+        feedback.textContent = "";
+        this.style.borderColor = "#e2e8f0";
+      }
+    });
+
+    // Email validation with real-time feedback
+    emailInput.addEventListener("input", function () {
+      const feedback = document.getElementById("email-feedback");
+      if (this.validity.valid && this.value.length > 0) {
+        feedback.textContent = "✅ Valid email address";
+        feedback.style.color = "#48bb78";
+        this.style.borderColor = "#48bb78";
+      } else if (this.value.length > 0) {
+        feedback.textContent = "❌ Please enter a valid email address";
+        feedback.style.color = "#f56565";
+        this.style.borderColor = "#f56565";
+      } else {
+        feedback.textContent = "";
+        this.style.borderColor = "#e2e8f0";
+      }
+    });
+
+    // Name validation with real-time feedback
+    nameInput.addEventListener("input", function () {
+      const feedback = document.getElementById("name-feedback");
+      if (this.value.length >= 2 && this.value.length <= 50) {
+        feedback.textContent = "✅ Perfect!";
+        feedback.style.color = "#48bb78";
+        this.style.borderColor = "#48bb78";
+      } else if (this.value.length > 0 && this.value.length < 2) {
+        feedback.textContent = "📝 At least 2 characters required";
+        feedback.style.color = "#ed8936";
+        this.style.borderColor = "#ed8936";
+      } else if (this.value.length > 50) {
+        feedback.textContent = "❌ Maximum 50 characters allowed";
+        feedback.style.color = "#f56565";
+        this.style.borderColor = "#f56565";
+      } else {
+        feedback.textContent = "";
+        this.style.borderColor = "#e2e8f0";
+      }
+    });
+
+    // Enhanced form submission with loading state
+    if (form) {
+      form.addEventListener("submit", function (e) {
+        const btnText = submitBtn.querySelector(".btn-text");
+        const btnLoader = submitBtn.querySelector(".btn-loader");
+        const btnIcon = submitBtn.querySelector(".btn-icon");
+
+        // Show loading state
+        btnText.style.display = "none";
+        btnIcon.style.display = "none";
+        btnLoader.style.display = "inline-flex";
+        submitBtn.disabled = true;
+
+        // Add processing animation to form
+        form.style.opacity = "0.7";
+        form.style.pointerEvents = "none";
+      });
+    }
+  }
+
+  // Typing animation for hero title
+  function typeWriter(text, element, speed = 120) {
+    let i = 0;
+    element.innerHTML = "";
+    function type() {
+      if (i < text.length) {
+        element.innerHTML += text.charAt(i);
+        i++;
+        setTimeout(type, speed);
+      }
+    }
+    type();
+  }
+
+  // 3D Tilt effect for cards
+  function initTiltEffect() {
+    const cards = document.querySelectorAll("[data-tilt]");
+    cards.forEach((card) => {
+      card.addEventListener("mousemove", (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+
+        const rotateX = (y - centerY) / 15;
+        const rotateY = (centerX - x) / 15;
+
+        card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`;
+      });
+
+      card.addEventListener("mouseleave", () => {
+        card.style.transform =
+          "perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1)";
+      });
+    });
+  }
+
+  // Intersection Observer for scroll animations
+  function initScrollAnimations() {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate-in");
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    document
+      .querySelectorAll(".fade-in-up, .nav-card, .overview-content")
+      .forEach((el) => {
+        observer.observe(el);
+      });
+  }
+
+  // Auto-dismiss flash messages
+  function initFlashMessages() {
+    const flashMessages = document.querySelectorAll(".flash-message");
+    flashMessages.forEach((message) => {
+      // Auto-dismiss success messages after 5 seconds
+      if (message.classList.contains("flash-success")) {
+        setTimeout(() => {
+          message.style.opacity = "0";
+          message.style.transform = "translateX(100%)";
+          setTimeout(() => {
+            message.remove();
+          }, 300);
+        }, 5000);
+      }
+    });
+  }
+
+  // Initialize all effects
+  document.addEventListener("DOMContentLoaded", () => {
+    // Start typing animation
+    const heroTitle = document.querySelector(".typing-animation");
+    if (heroTitle) {
+      setTimeout(() => {
+        typeWriter("ToyCraft Tales", heroTitle, 100);
+      }, 500);
+    }
+
+    // Initialize effects with proper timing
+    setTimeout(initTiltEffect, 800);
+    setTimeout(initScrollAnimations, 500);
+    setTimeout(initEnhancedContactForm, 1000);
+    setTimeout(initFlashMessages, 500);
+  });
+</script>
+{% endblock %}
