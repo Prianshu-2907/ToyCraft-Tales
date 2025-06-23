@@ -19,8 +19,8 @@ app.secret_key = 'ToyCraft2024!DataViz#Analytics$SecureKey789'
 EMAIL_CONFIG = {
     'SMTP_SERVER': 'smtp.gmail.com',  # For Gmail
     'SMTP_PORT': 587,
-    'EMAIL': 'prince56jyo@gmail.com',  # Your email
-    'PASSWORD': 'lwmu pjqz exsk orof',   # Your email app password
+    'EMAIL': '',  # Your email give yours
+    'PASSWORD': '',   # Your email app password
     'FROM_NAME': 'ToyCraft Tales'
 }
 
