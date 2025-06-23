@@ -29,7 +29,7 @@ class DatabaseManager:
         self.config = {
             'host': 'localhost',
             'user': 'root',
-            'password': 'Prianshu@123',  # Your actual password
+            'password': '',  # Your actual password
             'database': 'toycraft_tales',
             'port': 3306
         }
